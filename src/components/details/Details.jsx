@@ -46,7 +46,14 @@ function Details() {
             <Typography>Lorem ipsum dolor sit amet consectetur.</Typography>
           </Box>
         </Grid>
-        <Grid sx={{ padding: "1rem" }}>
+        <Grid
+          sx={{
+            padding: "1rem",
+            height: "100%",
+            maxHeight: "50vh",
+            overflowY: "auto",
+          }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -81,7 +88,7 @@ function Details() {
                 justifyContent: "space-between",
               }}
             >
-              <Typography>Privacy and Help</Typography>
+              <Typography>Privacy & Help</Typography>
               <img
                 style={{
                   width: "17px",
@@ -117,7 +124,9 @@ function Details() {
               </Box>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Box sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+              <Box
+                sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}
+              >
                 <img
                   style={{ width: "35px", height: "35px" }}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNw1fDzeYGH2BFi4ufuCv2EORvqxoEMDdoA&s"
@@ -140,7 +149,9 @@ function Details() {
               ></img>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Box sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+              <Box
+                sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}
+              >
                 <img
                   style={{ width: "35px", height: "35px" }}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNw1fDzeYGH2BFi4ufuCv2EORvqxoEMDdoA&s"
@@ -163,7 +174,9 @@ function Details() {
               ></img>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Box sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+              <Box
+                sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}
+              >
                 <img
                   style={{ width: "35px", height: "35px" }}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNw1fDzeYGH2BFi4ufuCv2EORvqxoEMDdoA&s"
@@ -186,7 +199,9 @@ function Details() {
               ></img>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-              <Box sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+              <Box
+                sx={{ display: "flex", gap: "1.5rem", alignItems: "center" }}
+              >
                 <img
                   style={{ width: "35px", height: "35px" }}
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNw1fDzeYGH2BFi4ufuCv2EORvqxoEMDdoA&s"

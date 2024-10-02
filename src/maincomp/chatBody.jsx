@@ -1,10 +1,12 @@
-import { Box, Grid } from '@mui/material';
-import React from 'react';
-import List from '../components/list/List';
-import Details from '../components/details/Details';
-import Chat from '../components/chat/Chat';
+import { Box, Grid } from "@mui/material";
+import React from "react";
+import List from "../components/list/List";
+import Details from "../components/details/Details";
+import Chat from "../components/chat/Chat";
+import Login from "../components/Login";
 
 const ChatBody = () => {
+  const user = true;
   return (
     <Grid
       sx={{
@@ -13,7 +15,7 @@ const ChatBody = () => {
         width: "100vw",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       <Box
@@ -23,18 +25,23 @@ const ChatBody = () => {
           width: "90vw",
           backdropFilter: "blur(19px) saturate(180%)",
           borderRadius: "12px",
-          border:"1px solid rgba(255,255,255,0.125)",
+          border: "1px solid rgba(255,255,255,0.125)",
           color: "white",
-          display:"flex"
+          // display: "flex",
         }}
       >
-        <List />
-        <Chat />
-        <Details />
+        {user ? (
+          <Box sx={{ display: "flex" }}>
+            <List />
+            <Chat />
+            <Details />
+          </Box>
+        ) : (
+          <Login />
+        )}
       </Box>
     </Grid>
   );
 };
 
 export default ChatBody;
-
