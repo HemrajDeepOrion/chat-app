@@ -107,7 +107,7 @@ function Chat() {
                 <Box sx={{ position: "absolute", bottom: "40px", left: 0 }}>
                   {
                     emoji && (
-                      <EmojiPicker height={400} width={300} onEmojiClick={(e) => handleEmoji(e)} />
+                      <EmojiPicker style={{zIndex:1}} height={400} width={300} onEmojiClick={(e) => handleEmoji(e)} />
                     )
                   }
                 </Box>
